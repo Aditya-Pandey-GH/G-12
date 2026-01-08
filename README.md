@@ -26,3 +26,9 @@
 		<li>Remove the MySQL dependency and implement NoSQL or maybe host MySQL over a global server</li>
 	</ul>
 </p>
+
+<h2>CREDITS</h2>
+<ol>
+	<li><a href="https://github.com/Aditya-Pandey-GH">Aditya Pandey</a></li>
+	<li><a href="https://github.com/AggarwalPriyanshu">Priyanshu Aggarwal</a></li>
+</ol>
