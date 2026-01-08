@@ -1,34 +1,128 @@
-<h1>G-12</h1>
 
-<h2>ABOUT THE GAME</h2>
-<p>
-	<ul>
-		<li>G-12 is a Command Line Based game project, made using Python</li>
-		<li>It uses the libraries such as random, os, time, csv, and mysql.connector</li>
-		<li>It consists of several fun games, a quiz, and an IQ game</li>
-		<li>It consists of a (not so robust and extremely basic) login system.</li>
-		<li>If you forgot your password, you can use Forgot Password feature to retreive the password.</li>
-    </ul>
-</p>
+# 🎮 G-12: The CLI Game Zone & User Management System
 
-<h2>NOTE</h2>
-<p>
-	<ul>
-		<li>Install "mysql.connector" using pip, because I lost the build before implementing MySQL connectivity</li>
-		<li>Install "Python" and then run the "CS_Project_File.py" file, to experience the entire application</li>
-		<li>If you want to play only the games, and are not concerned about the login system, run the "Games.py" file</li>
-	</ul>
-</p>
+![Python](https://img.shields.io/badge/Language-Python%203.x-blue)
+![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
+![CLI](https://img.shields.io/badge/Interface-CLI-lightgrey)
+![Auth](https://img.shields.io/badge/Feature-User%20Authentication-success)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-<h2>WHAT'S NEXT?</h2>
-<p>
-	<ul>
-		<li>Remove the MySQL dependency and implement NoSQL or maybe host MySQL over a global server</li>
-	</ul>
-</p>
+**G-12** is a **Command Line Interface (CLI) application** developed as a **full-stack Python project**.  
+It combines a **secure user authentication system** with an engaging collection of **mini-games**, ranging from mathematical puzzles and logic challenges to high-intensity quizzes.
 
-<h2>CREDITS</h2>
-<ol>
-	<li><a href="https://github.com/Aditya-Pandey-GH">Aditya Pandey</a></li>
-	<li><a href="https://github.com/AggarwalPriyanshu">Priyanshu Aggarwal</a></li>
-</ol>
+---
+
+## ✨ Key Features
+
+### 👤 User Management System
+- **Secure Authentication**  
+  Login and Sign-up functionality with password-protected user accounts.
+
+- **Persistent Storage**  
+  Dual-mode storage using **MySQL** for database management and **CSV files** for local backups.
+
+- **Account Recovery**  
+  Built-in *Forgot Password* feature using a simulated **OTP (One-Time Password)** system.
+
+- **CRUD Operations**  
+  Users can **View, Edit, or Delete** their account details directly from the main dashboard.
+
+---
+
+### 🕹️ The Game Zone
+- **Fun Games**
+  - Stone-Paper-Scissors  
+  - Lucky Draw  
+  - Guess the Number  
+  - Prank Calculators  
+
+- **Mind Games**
+  - Multi-category Quiz system:
+    - Technology  
+    - Astronomy  
+    - Nature  
+    - Sports  
+    - History  
+
+- **IQ Puzzles**
+  - **FPB (Fermi, Pico, Bagels)**  
+    A deductive logic number-guessing game available in **Single-player** and **Multi-player** modes.
+
+---
+
+## 🛠️ Tech Stack
+- **Language:** Python 3.x  
+- **Database:** MySQL (`mysql-connector-python`)  
+- **File Handling:** CSV module for local backups  
+- **Standard Libraries:**  
+  - `random` – game logic  
+  - `time` – UI delays  
+  - `os` – file management  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Python:** Python 3.x installed  
+- **MySQL:** Local MySQL server running  
+- **Connector:** Install required library  
+  ```bash
+  pip install mysql-connector-python
+
+### Configuration
+Update the database credentials in:
+- CS_Project_File.py
+- File_Handling.py
+```
+con = mc.connect(
+    host="localhost",
+    user="root",
+    passwd="your_password"
+)
+```
+
+### Execution
+- Run full application (Authentication + Games):
+```
+python CS_Project_File.py
+```
+- Run games directly (Bypass authentication):
+```
+python Games.py
+```
+
+---
+
+### 📂 Project Structure
+
+```
+G-12/
+│
+├── CS_Project_File.py   # Main entry point & account management dashboard
+├── File_Handling.py    # Backend logic, CSV operations, OTP recovery
+├── Games.py            # Core gaming engine (all mini-games)
+├── GAMERS.csv          # Local storage for user records
+```
+
+---
+
+## 👀 What's Next
+
+- Remove the MySQL dependency and implement NoSQL or maybe host MySQL over a global server
+
+---
+
+### 👥 Authors & Contributors
+
+#### Aditya Pandey (Website and Video Game Developer)
+💻 GitHub: https://github.com/Aditya-Pandey-GH  
+💼 LinkedIn: https://www.linkedin.com/in/aditya-pandey-in  
+
+#### Priyanshu Aggarwal (Electronics & Communication Engineering)
+💻 GitHub: https://github.com/AggarwalPriyanshu  
+💼 LinkedIn: https://linkedin.com/in/priyanshu1201  
+
+---
+
+⭐ If you find this repository useful, feel free to star it!
